@@ -1,2 +1,88 @@
 $lato: 'Lato', sans-serif;
 $openSans: 'Open Sans', sans-serif;
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    line-height: 24px;
+}
+body{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    background-image: url('/images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    &__top{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin-left: 62px;
+    }
+    &__link{
+        color: #fff;
+        font-family: $openSans;
+    }
+    &__slider{
+        margin-top: 130px;
+        text-align: center;
+        display: block;
+    }
+    &__collection{
+        font-family: $openSans;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: calc(30/18 * 1em);
+        letter-spacing: 8px;
+        padding-bottom: 45px;
+    }
+    &__discount{
+        font-family: $lato;
+        font-weight: 900;
+        font-size: calc(59/18 * 1em);
+        padding-bottom: 45px;
+    }
+    &__description{
+        font-family: $openSans;
+        font-weight: 300;
+        font-size: calc(30/18 * 1em);
+        line-height: 36px;
+        padding-bottom: 45px;
+    }
+    &__btn{
+        font-family: $lato;
+        font-weight: 900;
+        padding: 23px;
+        color: #fff;
+        border: 2px solid #fff;
+        display: inline-block;
+    }
+}
+
+  
