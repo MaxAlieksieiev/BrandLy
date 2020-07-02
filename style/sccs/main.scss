@@ -29,8 +29,9 @@ ul{
 .header{
     background-image: url('/images/header.jpg');
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     color: #fff;
     &__top{
         padding-top: 20px;
@@ -52,7 +53,7 @@ ul{
     &__slider{
         margin-top: 130px;
         text-align: center;
-        display: block;
+        
     }
     &__collection{
         font-family: $openSans;
@@ -83,6 +84,49 @@ ul{
         border: 2px solid #fff;
         display: inline-block;
     }
+    &__slider .slick-slide{
+        margin-top: 50px;
+        outline: none;
+    }
+    &__slider .slick-dots{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    &__slider .slick-dots li{
+        padding: 150px 0 60px;
+        margin-left: 8px;
+    }
+    &__slider .slick-dots li.slick-active button{
+        background-color: transparent;
+        border: 2px solid #fff;
+        
+    }
+    &__slider .slick-dots button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        padding: 0;
+        border: none;
+        background-color: #fff;
+        outline: none;
+    }
+    
 }
 
+.Ellipse_10_copy_2 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 961px;
+    top: 856px;
+    width: 16px;
+    height: 16px;
+    z-index: 183;
+  }
   
