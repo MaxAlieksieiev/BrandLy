@@ -116,16 +116,39 @@ ul {
   outline: none;
 }
 
-.Ellipse_10_copy_2 {
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0);
+.products__inner {
+  padding-top: 60px;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 34px;
+  line-height: 40px;
+  padding: 25px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after,
+.title::before {
+  content: "";
+  width: 113px;
+  height: 3px;
+  background-color: #dc0000;
   position: absolute;
-  left: 961px;
-  top: 856px;
-  width: 16px;
-  height: 16px;
-  z-index: 183;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.title::before {
+  content: "";
+  top: 0;
+}
+
+.title::after {
+  content: "";
+  bottom: 0;
 }
