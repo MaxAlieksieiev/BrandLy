@@ -269,15 +269,17 @@ ul {
 .trending-items__inner .title {
   margin: 80px 0;
 }
-.trending-items__slider {
+.trending-items__slider-item {
   display: flex;
   justify-content: space-between;
 }
 .trending-items__left-side {
+  max-width: 570px;
   margin-right: 30px;
 }
 .trending-items__right-side {
   text-align: left;
+  max-width: 570px;
 }
 .trending-items__collection {
   font-family: "Open Sans", sans-serif;
