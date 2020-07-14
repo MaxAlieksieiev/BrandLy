@@ -212,6 +212,9 @@ ul{
             margin: 0 auto;
             
         }
+        &__title{
+            position: relative;
+        }
         &__right &__title{
             max-width: 432px;
             margin: 0 auto;
@@ -223,6 +226,17 @@ ul{
             line-height: 50px;
             color: #fff;
             display: block;
+        }
+        &__title::after,
+        &__title::before{
+            content: "";
+            width: 192px;
+            height: 1px;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
         
     }
