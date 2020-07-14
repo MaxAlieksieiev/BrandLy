@@ -192,7 +192,6 @@ ul{
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
-            // height: 100%;
             margin-right: 30px;
             
         }
@@ -201,7 +200,7 @@ ul{
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
-            // height: 100%;
+            
         }
         &__inner{
             padding: 117px 0;
@@ -252,7 +251,6 @@ ul{
     padding: 25px 0;
     position: relative;
     display: inline-block;
-    
 }
 .title::after,
 .title::before{
@@ -277,5 +275,107 @@ ul{
 
 //products
 
+//trending-items
+.trending-items{
+    background-image: url("/images/tranding-items_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 100vh;
+    &__inner{
+        margin-top: 60px; 
+        padding-bottom: 140px;
+        text-align: center;
+    }
+    &__inner .title{
+        margin: 80px 0;
+    }
+    &__slider{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left-side{
+        margin-right: 30px;
+    }
+    &__right-side{
+        text-align: left;
+    }
+    &__collection{
+        font-family: $openSans;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 400px;
+        color: #777777;
+        position: relative;
+        padding-bottom: 25px;
+    }
+    &__collection::after{
+        content: "";
+        width: 30px;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__text{
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #777777;
+    }
+    &__text + &__text{
+        margin-bottom: 80px;
+    }
+    &__sizes{
+        max-width: 370px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 50px;
+        border-left: 1px solid #afafaf;
+        border-right: 1px solid #afafaf;
+        border-top: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        font-family: $openSans;
+        font-weight: 700;
+        font-size: 16px;
+        color: #333333;
+    }
+    &__button:hover{
+        color: #fff;
+        background-color: #333333;
+        border: 1px solid transparent;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+        max-width: 370px;
+    }
 
+}
+.title-of-content{
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #dc0000;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    border: 1px solid #333333;
+    font-family: $openSans;
+    font-weight: 700;
+}
+//trending-items
   

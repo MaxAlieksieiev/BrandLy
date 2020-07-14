@@ -255,3 +255,105 @@ ul {
   content: "";
   bottom: 0;
 }
+
+.trending-items {
+  background-image: url("/images/tranding-items_back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.trending-items__inner {
+  margin-top: 60px;
+  padding-bottom: 140px;
+  text-align: center;
+}
+.trending-items__inner .title {
+  margin: 80px 0;
+}
+.trending-items__slider {
+  display: flex;
+  justify-content: space-between;
+}
+.trending-items__left-side {
+  margin-right: 30px;
+}
+.trending-items__right-side {
+  text-align: left;
+}
+.trending-items__collection {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400px;
+  color: #777777;
+  position: relative;
+  padding-bottom: 25px;
+}
+.trending-items__collection::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.trending-items__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #777777;
+}
+.trending-items__text + .trending-items__text {
+  margin-bottom: 80px;
+}
+.trending-items__sizes {
+  max-width: 370px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.trending-items__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-left: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+}
+.trending-items__button:hover {
+  color: #fff;
+  background-color: #333333;
+  border: 1px solid transparent;
+}
+.trending-items__buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 370px;
+}
+
+.title-of-content {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #dc0000;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  border: 1px solid #333333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
