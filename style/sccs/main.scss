@@ -283,11 +283,35 @@ ul{
     // height: 100vh;
     &__inner{
         margin-top: 60px; 
-        padding-bottom: 140px;
+        padding-bottom: 90px;
         text-align: center;
     }
     &__inner .title{
         margin: 80px 0;
+    }
+    & .slick-slide{
+        display: flex;
+    }
+    & .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        list-style: none;
+    }
+    & .slick-dots li button{
+        font-size: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-left: 10px;
+        outline: none;
+        border: none;
+        background-color: #878787;
+        padding: 0;
+    }
+    & .slick-dots li.slick-active button{
+        background-color: transparent;
+        border: 2px solid #dc0000;
     }
     &__slider-item{
         display: flex;
@@ -379,6 +403,11 @@ ul{
     border: 1px solid #333333;
     font-family: $openSans;
     font-weight: 700;
+    &:hover{
+        color: #fff;
+        background-color: #333333;
+        border: 1px solid transparent;
+    }
 }
 //trending-items
   
