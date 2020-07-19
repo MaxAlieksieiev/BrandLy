@@ -451,7 +451,7 @@ ul{
             background-color: transparent;
             border: none;
             outline: none;
-            margin: 0 20px;
+            margin: 0 10px;
         }
         & .slick-prev{
             left: 0;
@@ -483,8 +483,66 @@ ul{
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 60px;
+        padding: 15px 0;
+        border-top: 1px solid rgb(236, 240, 241);
+        border-bottom: 1px solid rgb(236, 240, 241);
     }
 }
 
+  
 
 //blog
+//subscribe
+.subscribe{
+    background-image: url("/images/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__inner{
+        padding: 80px 0;
+    }
+    &__title{
+        font-family: $openSans;
+        font-weight: 300;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &-form{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__email{
+        background-color: transparent;
+        max-width: 770px;
+        border: 1px solid #fff;
+        outline: none;
+        padding: 0 28px;
+        flex-grow: 1;
+        color: #fff;
+    }
+    &__email::placeholder{
+        position: relative;
+        padding-left: 50px;
+        font-family: $openSans;
+        font-weight: 300;
+        color: #fff;
+        font-size: 13px;
+    }
+    &__email::placeholder::before{
+        content: "";
+        background-image: url("/images/email.png");
+        position: absolute;
+        left: 0;
+        width: 16px;
+        height: 11px;
+        visibility: visible;
+    }
+    &__send{
+        border: none;
+        width: 270px;
+        cursor: pointer;
+    }
+}
+
+//subscribe
