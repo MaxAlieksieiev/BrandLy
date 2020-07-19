@@ -410,4 +410,46 @@ ul{
     }
 }
 //trending-items
-  
+
+//blog
+.blog{
+    &__inner{
+        padding: 60px 0;
+        text-align: center;
+    }
+    &__inner  .title{
+        margin-bottom: 60px;
+    }
+    &__slider{
+        display: flex;
+        justify-content: space-between;
+        &-item + &-item{
+            margin-left: 30px; 
+        }
+        &-item{
+            text-align: left;
+        }
+    }
+    &__main-info{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 6px;
+        color: #333333;
+    }
+    &__text{
+        font-family: $openSans;
+        font-weight: 300;
+        // text-align: left;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+}
+
+
+//blog

@@ -388,3 +388,39 @@ ul {
   background-color: #333333;
   border: 1px solid transparent;
 }
+
+.blog__inner {
+  padding: 60px 0;
+  text-align: center;
+}
+.blog__inner .title {
+  margin-bottom: 60px;
+}
+.blog__slider {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__slider-item + .blog__slider-item {
+  margin-left: 30px;
+}
+.blog__slider-item {
+  text-align: left;
+}
+.blog__main-info {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 6px;
+  color: #333333;
+}
+.blog__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
