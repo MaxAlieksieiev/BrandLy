@@ -15,11 +15,13 @@ $(document).ready(function(){
         arrows: false,
     });
 
-    // $(".blog__slider").slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: true,
-    // })
+    $(".blog__slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // fade: true,
+        prevArrow: "<button  type='button' class='slick-prev slick-btn'><img src='./../images/left_arrow.svg'></button>",
+        nextArrow: "<button  type='button' class='slick-next slick-btn'><img src='./../images/right_arrow.svg'></button>",
+    })
 
   });
           
